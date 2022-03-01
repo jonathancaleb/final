@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <title>Document</title>
+    <style>
+        /* Split the screen in half */
+.split {
+  height: 100%;
+  width: 50%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+/* Control the left side */
+.left {
+  left: 0;
+  background-color: rgb(205, 245, 132);
+}
+
+/* Control the right side */
+.right {
+  right: 0;
+  background-color: rgb(0, 255, 255);
+}
+
+/* If you want the content centered horizontally and vertically */
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/* Style the image inside the centered container, if needed */
+.centered img {
+  width: 150px;
+  border-radius: 50%;
+}
+.btn btn-danger{
+    background-color: #239ccd;
+    padding: 5px 20px;
+    border: 2px solid skyblue;
+    border-radius: 5px;
+    color: white;
+}
+    </style>
+</head>
+<body>
+  
+    <div class="split left">
+        <div class="centered">
+          <img src="images/download (2).jpg" alt="Avatar woman">
+          <h2><a href="login.html">LOG IN</a>#</h2>
+          <p>Already a member?, We value your time with us!</p>
+        </div>
+        <a href="index.html">HOME</a>
+      </div>
+      
+      <div class="split right">
+        <div class="centered">
+          <img src="images/download.jpg" alt="Avatar man">
+          <h2><a href="signup.html">REGISTER</a>#</h2>
+          <p>Create an account with us to improve your browsing experience!</p>
+        </div>
+      </div>
+</body>
+</html>
